@@ -9662,7 +9662,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Using A Number File To Create Input]] [[What Is ASPI]]" title="$:/StoryList">
+<div list="[[Using A Number File To Create Input]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9832,11 +9832,11 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200928005643165" modified="20200928011006759" tags="Journal programming inputvectors ruby" title="Using A Number File To Create Input" type="text/plain">
+<div created="20200928005643165" modified="20200928012025128" tags="Journal programming inputvectors ruby" title="Using A Number File To Create Input" type="text/plain">
 <pre>When creating an input vector, it's important to read from a file that creates the integer, rather than relying on input. This allows you to continue where you left off in future points you run the program:
 
 # Reads in the number that is suppose to be read and used as input.
-number = File.read(&quot;data/input/number.txt&quot;),strip.to_i
+number = File.read(&quot;data/input/number.txt&quot;).strip.to_i
 
 # This is for making sure it automatically resets after you say goodbye. Later I will be tweaking this by checking for another input variable to say hello or goodbye, again:
 if number &gt; 1
